@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Growth | proweful solution to grow your startup</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -34,27 +34,41 @@
               <li><a href="#">Log In</a></li>
             </ul>
           </div>
+          <button class="menu-bar">
+            <i class="fa-solid fa-bars"></i>
+          </button>
         </div>
+        <aside>
+          <div class="sidebar hidden">
+            <div class="sidebar-content">
+              <button class="close-menu"><i class="fa-solid fa-x"></i></button>
+              <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Log In</a></li>
+              </ul>
+            </div>
+          </div>
+        </aside>
       </navbar>
     </header>
     <section class="header-section">
       <div class="container">
-        <div class="header-content">
-          <div class="header-text">
-            <h1 class="section-heading text-xl">
-              A powerful solution to grow your startup. Fast!
-            </h1>
-            <p class="section-description text-sm">
-              Organise, collaborate, and track progress seamlessly with our
-              one-stop-shop startup growth tool.
-            </p>
-          </div>
-          <div class="header-btns">
-            <a href="#" class="btn btn-primary">Get Started</a>
-            <a href="#" class="btn btn-light"
-              ><i class="fa-regular fa-bookmark"></i>Learn More</a
-            >
-          </div>
+        <div class="header-text">
+          <h1 class="section-heading text-xl">
+            A powerful solution to grow your startup. Fast!
+          </h1>
+          <p class="section-description text-sm">
+            Organise, collaborate, and track progress seamlessly with our
+            one-stop-shop startup growth tool.
+          </p>
+        </div>
+        <div class="header-btns">
+          <a href="#" class="btn btn-primary">Get Started</a>
+          <a href="#" class="btn btn-light"
+            ><i class="fa-regular fa-bookmark"></i>Book a demo</a
+          >
         </div>
       </div>
     </section>
@@ -205,7 +219,7 @@
                 </ul>
               </div>
               <div class="pricing-card-footer">
-                <a href="#" class="btn btn-light">Get Started</a>
+                <a href="#" class="btn btn-primary">Get Started</a>
               </div>
             </div>
           </div>
@@ -222,7 +236,7 @@
                 <a href="#" class="filter-link active">All</a>
               </div>
               <div class="filter-item">
-                <a href="#" class="filter-link">Getting started</a>
+                <a href="#" class="filter-link">Get started</a>
               </div>
               <div class="filter-item">
                 <a href="#" class="filter-link">Pricing</a>
@@ -285,8 +299,56 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
-      <div class="container"></div>
+    <footer class="footer bg-dark">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-logo">
+            <img src="assets/images/logo-white.png  " alt="Growth Logo Light" />
+
+            <div class="newsletter-card bg-light">
+              <h3 class="sub text-md">Subscribe to our newsletter</h3>
+              <p class="text-sm">
+                Stay up to date with the latest news, tips and updates from the
+                Growth team.
+              </p>
+              <form action="">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email"
+                />
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </form>
+            </div>
+
+            <a href="#"> <i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="company">
+            <h3 class="text-md">Company</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Our Process</a></li>
+              <li><a href="#">Join our team</a></li>
+            </ul>
+          </div>
+          <div class="resources">
+            <h3 class="text-md">Resources</h3>
+            <ul>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Reasearch</a></li>
+              <li><a href="#">Recent Projects</a></li>
+            </ul>
+          </div>
+          <div class="contact">
+            <h3 class="text-md">Contact</h3>
+            <ul>
+              <li><a href="#">yazanalqadery@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
     <script defer src="main.js"></script>
   </body>

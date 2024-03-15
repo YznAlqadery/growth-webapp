@@ -1,4 +1,6 @@
 const faqCard = document.querySelectorAll(".faq-card");
+const closeSidebar = document.querySelector(".close-menu");
+const openSidebar = document.querySelector(".menu-bar");
 
 faqCard.forEach((card) => {
   card.addEventListener("click", (e) => {
@@ -15,4 +17,14 @@ faqCard.forEach((card) => {
     icon.classList.toggle("fa-minus");
     icon.classList.toggle("fa-plus");
   });
+});
+
+closeSidebar.addEventListener("click", () => {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.classList.toggle("hidden");
+});
+
+openSidebar.addEventListener("click", () => {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.classList.toggle("hidden");
 });

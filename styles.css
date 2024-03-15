@@ -68,6 +68,7 @@ img {
   color: var(--primary-color);
   transition: 0.3s;
 }
+/* Header section */
 .header-section {
   margin-bottom: 3rem;
 }
@@ -217,6 +218,48 @@ img {
 .faq-card .faq-card-body.opened {
   display: block;
 }
+/*Footer*/
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  background: var(--dark-color);
+  color: var(--light-color);
+}
+.footer a i {
+  color: var(--light-color);
+  margin-right: 0.8rem;
+  font-size: 1.4rem;
+}
+.footer input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+.footer .newsletter-card {
+  margin: 20px 30px 30px 0;
+  border-radius: 10px;
+  padding: 20px;
+}
+.footer .newsletter-card .btn {
+  border: none;
+  padding: 0.8rem 4rem;
+  display: block;
+  margin: 0 auto;
+}
+.footer .sub {
+  color: var(--dark-color);
+}
+.footer > div h3,
+.footer li a {
+  color: var(--light-color);
+}
+/*utilities*/
 .text-xl {
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -267,4 +310,189 @@ img {
 .active {
   background: var(--primary-color);
   color: #fff;
+}
+.menu-bar {
+  border: none;
+  font-size: 1.8rem;
+  background: transparent;
+  cursor: pointer;
+  display: none;
+}
+.btn-light {
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+i {
+  margin-right: 0.6rem;
+}
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 350px;
+  height: 100%;
+  background: var(--light-color);
+  opacity: 0.95;
+  padding: 3rem;
+  z-index: 1000;
+  animation: slideIn 0.3s ease-in-out;
+}
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.sidebar ul li {
+  text-align: center;
+}
+.sidebar ul li a {
+  font-size: 1.8rem;
+  color: var(--dark-color);
+}
+.sidebar ul li:last-child a {
+  background: var(--light-color);
+  color: var(--dark-color);
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.sidebar ul li:last-child a:hover {
+  background: var(--light-color);
+  color: var(--primary-color);
+}
+.close-menu {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.8rem;
+  color: var(--dark-color);
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+/* Animations */
+@keyframes slideIn {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+.hidden {
+  display: none;
+}
+/* Responsive */
+@media screen and (width<=850px) {
+  .testimonial-cards {
+    grid-template-columns: 1fr;
+  }
+  .testimonial-card {
+    padding: 1rem;
+  }
+  .text-xl {
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 1.2;
+  }
+  .text-md {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+@media screen and (width<=670px) {
+  .header-section .header-text {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .header-section .header-text .section-heading {
+    font-size: 2.5rem;
+  }
+  .header-section .container {
+    background: url(./assets/images/section-bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 350px 400px;
+    background-position: bottom;
+    height: 830px;
+  }
+  .header-btns {
+    margin-bottom: 3rem;
+  }
+  .header-btns a {
+    display: block;
+    margin-bottom: 0.6rem;
+    width: 100%;
+    text-align: center;
+  }
+  .pricing-section .pricing-cards,
+  .footer .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .testimonial-section .container {
+    padding: 0;
+  }
+  .testimonial-section .testimonial-card {
+    padding: 1.2rem;
+  }
+  .testimonial-section .testimonial-card-header {
+    max-width: 100%;
+    text-align: center;
+  }
+  .footer .footer-grid > div {
+    text-align: center;
+  }
+  .faq-section .container-sm {
+    padding: 0;
+  }
+  .faq-section .filter-items {
+    text-align: center;
+    max-width: 100%;
+    padding: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .faq-section .filter-items .filter-item .filter-link {
+    padding: 0.8rem 0.8rem;
+    align-content: center;
+  }
+  .footer-grid {
+    padding: 0;
+  }
+  .footer .newsletter-card {
+    margin: 1rem auto;
+  }
+  .text-xl {
+    font-size: 1.9rem;
+  }
+
+  .text-lg {
+    font-size: 1.5rem;
+  }
+  .text-sm {
+    font-size: 0.9rem;
+  }
+  .text-md {
+    font-size: 1rem;
+  }
+  .menu-bar {
+    display: block;
+  }
+  .menu-links {
+    display: none;
+  }
+  .text-md {
+    font-size: 1.1rem;
+  }
+  .menu-bar {
+    display: block;
+  }
+  .menu-links {
+    display: none;
+  }
 }
